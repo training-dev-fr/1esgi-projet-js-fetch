@@ -1,0 +1,178 @@
+#form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#form form {
+    width: 40%;
+    align-items: center;
+}
+
+#post-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+#post-list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+#post-list .post {
+    border-radius: 8px;
+    border: 1px solid #606060;
+    padding: 20px;
+    background-color: #303030;
+}
+
+#post-list .post .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#post-list .post .title {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#post-list .post .action {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#post-list .post .action i {
+    cursor: pointer;
+}
+
+#post-list .post .title * {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+#post-list .post hr {
+    border: none;
+    border-top: 1px solid #606060;
+}
+
+#post-list .post .message {
+    padding: 12px 0px;
+    width: 100%;
+}
+
+.comment-list {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-list .comment {
+    border-radius: 8px;
+    border: 1px solid #606060;
+    background-color: #202020;
+    padding: 20px;
+}
+
+#comment-list .comment .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comment-list .comment .title {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comment-list .comment .title * {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.comment-list .comment hr {
+    border: none;
+    border-top: 1px solid #606060;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#error {
+    color: red;
+}
+
+#form input[type="submit"] {
+    padding: 8px;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: transparent;
+    color: white;
+}
+
+#username {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+nav.menu a,
+nav.menu a:visited,
+nav.menu a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.post textarea {
+    width: 100%;
+}
+
+.post .button {
+    display: flex;
+}
+
+.post .save {
+    padding: 8px;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.post .cancel {
+    padding: 8px;
+    background-color: #606060;
+    color: white;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    width: 50%;
+}

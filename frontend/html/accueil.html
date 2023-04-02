@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/global.css">
+    <link rel="stylesheet" href="./../css/accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">SocialNetwork.com</div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <span id="username"></span>
+                    <a href="#" id="signout" title="Déconnexion">
+                        <i class="fa-solid fa-power-off"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="form">
+            <form>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Nouveau message" id="message"></textarea>
+                </div>
+                <div id="error"></div>
+                <div class="form-group">
+                    <input type="submit" id="addPost" value="Publier" />
+                </div>
+            </form>
+        </div>
+        <div id="post-group">
+            <div id="post-list">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copy">SocialNetwork.com tous droits réservés ©2023-2123</div>
+        <div class="link">
+            <a href="#">Mentions légales</a>
+            <a href="#">RGPD</a>
+        </div>
+    </footer>
+    <script src="./../js/accueil.js" type="module"></script>
+</body>
+
+</html>
