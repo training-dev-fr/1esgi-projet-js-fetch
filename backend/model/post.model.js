@@ -12,11 +12,11 @@ let file = path.join(__dirname, '..', 'data', 'post.json');
 exports.getAll = (n) => {
     let listPost = postData.list.sort((a, b) => b.date - a.date).slice((n - 1) * 5, n * 5);
     for (let post of listPost) {
-        post.user = userModel.getOne(post.userId);
+        post.user = JSON.parse(JSON.stringify(userModel.getOne(post.userId)));
         delete post.user.password;
         post.date = new Date(post.date);
         for (let comment of post.commentList) {
-            comment.user = userModel.getOne(comment.userId);
+            comment.user = JSON.parse(JSON.stringify(userModel.getOne(comment.userId)));
             delete comment.user.password;
             comment.date = new Date(comment.date);
         }
