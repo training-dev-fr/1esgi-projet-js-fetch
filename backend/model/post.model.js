@@ -16,8 +16,8 @@ exports.getAll = (n) => {
         delete post.user.password;
         post.date = new Date(post.date);
         for (let comment of post.commentList) {
-            comment.user = userModel.getOne(post.userId);
-            delete post.user.password;
+            comment.user = userModel.getOne(comment.userId);
+            delete comment.user.password;
             comment.date = new Date(comment.date);
         }
     }
